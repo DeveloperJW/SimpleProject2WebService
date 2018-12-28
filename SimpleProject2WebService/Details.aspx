@@ -11,8 +11,9 @@
     <form id="form1" runat="server">
     <div style="height: 522px">
     
-        <asp:UpdatePanel ID="UpdatePanel1" runat="server">
-        </asp:UpdatePanel>
+        <asp:GridView ID="GridView1" runat="server" DataSourceID="ObjectDataSource1">
+        </asp:GridView>
+        <asp:ObjectDataSource ID="ObjectDataSource1" runat="server"></asp:ObjectDataSource>
     
     </div>
     </form>

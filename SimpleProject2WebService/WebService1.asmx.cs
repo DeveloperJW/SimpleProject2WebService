@@ -16,11 +16,18 @@ namespace SimpleProject2WebService
     // [System.Web.Script.Services.ScriptService]
     public class WebService1 : System.Web.Services.WebService
     {
+        public EmployeeList employeeList = new EmployeeList();
+
 
         [WebMethod]
         public string HelloWorld()
         {
             return "Hello World";
+        }
+        [WebMethod]
+        public List<Employee> getEmployeeList()
+        {
+            return employeeList.employeeList;
         }
     }
 }
